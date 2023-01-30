@@ -23,9 +23,6 @@
       </div>
       <div class="widget-item"></div>
     </div>
-    <div class="position-bar">
-      <arsc-2d-position-bar />
-    </div>
   </div>
 </template>
 
@@ -124,22 +121,23 @@ const handleLayerSwitch = (id: string) => {
 .map-widget-container {
   position: relative;
   height: 100%;
+  .map-content {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+  }
   .widget-content {
     position: absolute;
     right: 20px;
     bottom: 30px;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     .widget-item {
       margin-top: 10px;
     }
-  }
-  .position-bar {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 20px;
   }
 }
 </style>

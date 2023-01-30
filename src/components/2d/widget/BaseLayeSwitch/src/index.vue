@@ -57,6 +57,7 @@ const handleLayerSwitch = (id: string) => {
   height: 100%;
   display: flex;
   flex-direction: row;
+  height: 32px;
   align-items: flex-end;
   .layer-switch-pan {
     width: 250px;
